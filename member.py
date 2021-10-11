@@ -1,0 +1,204 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+from os import system, name
+import itertools
+import threading
+import time
+import sys
+import datetime
+from base64 import b64decode, b64encode
+from datetime import date
+
+expirydate = datetime.date(2021, 9, 24)
+# expirydate = datetime.date(2021, 8, 30)
+today = date.today()
+
+
+def hero():
+    def chalo():
+        done = False
+
+        # here is the animation
+        def animate():
+            for c in itertools.cycle(['|', '/', '-', '\\']):
+                if done:
+                    break
+                sys.stdout.write('\rhacking in the bcone server for next colour--------- ' + c)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            sys.stdout.write('\rDone!     ')
+
+        t = threading.Thread(target=animate)
+        t.start()
+
+        # long process here
+        time.sleep(15)
+        done = True
+
+    def chalo1():
+        done = False
+
+        # here is the animation
+        def animate():
+            for c in itertools.cycle(['|', '/', '-', '\\']):
+                if done:
+                    break
+                sys.stdout.write('\rgetting the colour wait --------- ' + c)
+                sys.stdout.flush()
+                time.sleep(0.1)
+            sys.stdout.write('\rDone!     ')
+
+        t = threading.Thread(target=animate)
+        t.start()
+
+        # long process here
+        time.sleep(10)
+        done = True
+
+    def clear():
+        # for windows
+        if name == 'nt':
+            _ = system('cls')
+        # for mac and linux(here, os.name is 'posix')
+        else:
+            _ = system('clear')
+
+    def getSum(n):
+        sum = 0
+        for digit in str(n):
+            sum += int(digit)
+        return sum
+
+    def lawde_time_pe_khel(n):
+        check = 0
+        for digit in (n):
+            if (int(digit) == 0):
+                check = check + 1
+        return check
+
+    clear()
+    y = 1
+    newperiod = period
+    banner = 'figlet RXCE'
+    numbers = []
+    while (y):
+        clear()
+        system(banner)
+        print("CYBERLORD")
+        print("Enter ", newperiod, " Bcone Price :")
+        current = input()
+        current = int(current)
+        chalo()
+        print("\n---------Successfully ANALISED the server-----------")
+        chalo1()
+        print("\n---------Successfully got NEXT colour -------------")
+        print('\n')
+        last2 = str(current)[-2:]
+        samjha_maadarchod = lawde_time_pe_khel(last2)
+        if (newperiod % 2 == 0):
+            sum = getSum(current) + samjha_maadarchod
+            if (sum % 2 == 0):
+                print(newperiod + 1, " : 🔴, RED")
+            else:
+                print(newperiod + 1, "  : 🟢, GREEN")
+        else:
+            sum = getSum(current) + samjha_maadarchod + 1
+            if (sum % 2 == 0):
+                print(newperiod + 1, "   : 🔴, RED")
+            else:
+                print(newperiod + 1, "   : 🟢, GREEN")
+        newperiod += 1
+        numbers.append(current)
+        y = input("Do you want to play : Press 1 and 0 to exit \n")
+        if (y == 0):
+            y = False
+        if (len(numbers) > 11):
+            clear()
+            system('figlet Thank you!!')
+            print("ACTIVATION CODE!!")
+            sys.exit(" \n \n \n ENTER ACTIVATION CODE")
+            # print(numbers)
+
+
+if (expirydate > today):
+    now = datetime.datetime.now()
+    First = now.replace(hour=1, minute=59, second=0, microsecond=0)
+    Firstend = now.replace(hour=6, minute=0, second=0, microsecond=0)
+    Second = now.replace(hour=6, minute=5, second=0, microsecond=0)
+    Secondend = now.replace(hour=20, minute=59, second=0, microsecond=0)
+    Third = now.replace(hour=21, minute=0, second=0, microsecond=0)
+    Thirdend = now.replace(hour=22, minute=59, second=0, microsecond=0)
+    Final = now.replace(hour=23, minute=0, second=0, microsecond=0)
+    Finalend = now.replace(hour=23, minute=55, second=0, microsecond=0)
+
+    if (now > Third and now < Thirdend):
+        period = 320
+        hero()
+    elif (False):
+        period = 340
+        hero()
+    elif (False):
+        period = 340
+        hero()
+    elif (False):
+        period = 360
+        hero()
+    else:
+        banner = 'figlet RXCE'
+        system(banner)
+
+        print(" admin on CYBERLORD ")
+
+
+
+else:
+    def clear():
+        # for windows
+        if name == 'nt':
+            _ = system('cls')
+        # for mac and linux(here, os.name is 'posix')
+        else:
+            _ = system('clear')
+
+
+    code = "INCJINDABAD"
+    nextday = "ANKUSH"
+    nexday1 = "VIKRAM"
+    banner = 'figlet RXCE'
+    system(banner)
+    print("*---------*----------*-------------*----------*")
+    print("Please Enter Activation CODE")
+    print("*---------*----------*-------------*----------*")
+
+    while (True):
+
+        print("--------*--------*----------*---------")
+
+        bhai = input(": ")
+        if (bhai == code):
+            clear()
+            print("----------ENJOY Your play time-----------")
+
+            print("wait.... starting....")
+            time.sleep(15)
+            period = 310
+            hero()
+        elif (bhai == nextday or bhai == nexday1):
+            clear()
+            banner = 'figlet RXCE'
+            system(banner)
+            print("----------Enjoy Your play time-----------")
+
+            print("wait.... starting....")
+            time.sleep(15)
+            period = 400
+            hero()
+            # sys.exit(" \n \n \n Contact on Telegram @smsn_knt")
+
+
+        else:
+            clear()
+            banner = 'figlet RXCE'
+            system(banner)
+            print("Incorrect Activation Code :")
