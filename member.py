@@ -162,7 +162,7 @@ else:
             _ = system('clear')
 
 
-    code = "INCJINDABAD"
+    code = "PRATIKJINDABAD"
     nextday = "ANKUSH"
     nexday1 = "VIKRAM"
     banner = 'figlet RXCE'
